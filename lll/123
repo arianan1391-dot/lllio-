@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Doodle 2.0</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/lightslider.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand:400&subset=latin&display=swap" rel="stylesheet">
+<link href="css/134.css" rel="stylesheet">
+<link href="css/123.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="lightslider.min.js"></script>
+<script src="searchindex.js"></script>
+<script src="wb.sitesearch.min.js"></script>
+<script>
+var features = 'toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=no,left=,top=,width=,height=';
+function searchPage(features)
+{
+   var element = document.getElementById('SiteSearch1');
+   window.open('sitesearch1-results.html?q='+encodeURIComponent(element.value), '', features);
+   return false;
+}
+</script>
+<script src="wwb20.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#LayoutGrid5']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top }, 600, 'easeInSine');
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top }, 600, 'easeOutCubic');
+   });
+   function onScrollintro()
+   {
+      var $obj = $("#wb_intro");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollintro();
+   $(window).scroll(function(event)
+   {
+      onScrollintro();
+   });
+   $("a[href*='#services1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services1').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollservices1()
+   {
+      var $obj = $("#wb_services1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollservices1();
+   $(window).scroll(function(event)
+   {
+      onScrollservices1();
+   });
+   searchParseURL('SiteSearch1');
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   
+   $("#SlideShow1").slideshow(
+   {
+      interval: 3000,
+      type: 'sequence',
+      effect: 'none',
+      direction: '',
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1920,
+      effectlength: 2000
+   });
+   var sliderSlideShow2 = $('#SlideShow2-gallery').lightSlider(
+   {
+      controls: false,
+      gallery: true,
+      item: 1,
+      loop: true,
+      thumbItem: 3,
+      thumbMargin: 5,
+      galleryMargin: 5,
+      pause: 3000,
+      auto: true
+});
+});
+</script>
+<!-- Insert Google Analytics code here -->
+</head>
+<body>
+<div id="wb_LayoutGrid5" data-top="opacity:1;" data--150-top="opacity:0;">
+<div id="LayoutGrid5">
+<div class="col-1">
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:0;">
+<img src="images/Gemini_Generated_Image_80p0gz80p0gz80p0.png" id="Image2" alt="" width="212" height="50">
+</div>
+</div>
+<div class="col-2">
+<img src="images/img0001.png" id="Banner1" alt="803=1.1" style="border-width:0;display:inline-block;width:293px;height:42px;z-index:1;" width="293" height="42">
+</div>
+<div class="col-3">
+<form name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)"></form>
+<input type="text" id="SiteSearch1" style="display:block;width: 100%;height:36px;z-index:2;" name="SiteSearch1" value="" spellcheck="false" placeholder="وب سایت گروه کلاس 803" role="searchbox" form="SiteSearch1_form">
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_CssMenu1" style="display:block;width:100%;z-index:3;">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#welcome" target="_self"><i class="fa fa-home"></i>خانه</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#news" target="_self"><i class="fa fa-wrench"></i>تازه</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="./page1.html" target="_self"><i class="fa fa-barcode"></i>درباره</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#team" target="_self">نسخه&nbsp;....اینده</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#contact" target="_self">نسخه...اینده</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_intro">
+<div id="intro">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:4;">
+<img src="images/InShot_20251225_131255158.gif" id="Image1" alt="" width="435" height="435">
+</div>
+<ul id="SlideShow1" style="z-index:5;">
+<li><img class="image" width="4080" height="2296" src="images/۲۰۲۵۱۲۲۱_۱۳۳۰۴۳.jpg" alt="" title=""></li>
+<li><img class="image" width="4080" height="2296" src="images/۲۰۲۵۱۲۲۱_۱۳۳۴۴۲.jpg" style="display:none;" alt="" title=""></li>
+</ul>
+<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:6;">
+<img src="images/Screenshot (21).png" id="Image4" alt="" width="435" height="226">
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_services1">
+<div id="services1">
+<div class="row">
+<div class="col-1">
+<div id="wb_servicesCard1" style="display:flex;width:100%;z-index:7;" class="card">
+<div id="servicesCard1-card-body">
+<img id="servicesCard1-card-item0" src="images/doodle_mobilev2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard1-card-item1">...<br></div>
+<div id="servicesCard1-card-item2">درنسخه اینده</div>
+</div>
+</div>
+<div id="wb_servicesCard3" style="display:flex;width:100%;z-index:8;" class="card">
+<div id="servicesCard3-card-body">
+<img id="servicesCard3-card-item0" src="images/doodle_animationv2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard3-card-item1">...</div>
+<div id="servicesCard3-card-item2">درنسخه ی اینده</div>
+</div>
+</div>
+<div id="wb_servicesCard5" style="display:flex;width:100%;z-index:9;" class="card">
+<div id="servicesCard5-card-body">
+<img id="servicesCard5-card-item0" src="images/doodle_clockv2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard5-card-item1">ویرایش<br></div>
+<div id="servicesCard5-card-item2">آخرین بروزرسانی 1404/09/05</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_servicesCard2" style="display:flex;width:100%;z-index:10;" class="card">
+<div id="servicesCard2-card-body">
+<img id="servicesCard2-card-item0" src="images/doodle_fontv2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard2-card-item1">ورود به کارسنج</div>
+<div id="servicesCard2-card-item2">ورود مستقیم به سامانه ی کارسنج</div>
+</div>
+</div>
+<input type="button" id="Button1" name="ورودی" value="ورود" style="display:inline-block;width:445px;height:55px;z-index:11;">
+<div id="wb_servicesCard4" style="display:flex;width:100%;z-index:12;" class="card">
+<div id="servicesCard4-card-body">
+<img id="servicesCard4-card-item0" src="images/doodle_camerav2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard4-card-item1">دانلود عکس ها شب یلدا</div>
+<div id="servicesCard4-card-item2">دانلود عکس به صورت فایل زیپ<br>1404.09.05<br></div>
+</div>
+</div>
+<input type="button" id="Button2" name="نصب عکس" value="نصب کن عکس رو" style="display:inline-block;width:445px;height:55px;z-index:13;">
+<div id="wb_servicesCard6" style="display:flex;width:100%;z-index:14;" class="card">
+<div id="servicesCard6-card-body">
+<img id="servicesCard6-card-item0" src="images/doodle_checkv2.png" width="80" height="80" alt="" title="">
+<div id="servicesCard6-card-item1">نظرسنجی <br><br></div>
+<div id="servicesCard6-card-item2">این ماه نیست<br></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:11px;top:auto;bottom:11px;width:50px;height:50px;z-index:26;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:15;">
+<a href="#home"><div id="upIcon"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:16;">
+<img src="images/InShot_20251225_130936580.gif" id="Image6" alt="" width="374" height="374">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<hr id="HorizontalLine1" style="display:block;width: 100%;z-index:17;">
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/InShot_20251225_131836986.gif" id="Image3" alt="" width="374" height="374">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:19;">
+<h1 id="Heading1">نسخه1.1<br></h1>
+</div>
+<div id="wb_PhotoGallery1" style="display:block;width:100%;z-index:20;">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<div class="thumbnail">
+<a href="images/doodle1v2.png" data-rel=""><img alt="" src="images/doodle1v2.png" class="image" width="290" height="475"></a>
+</div>
+<div class="thumbnail">
+<a href="images/doodle2v2.png" data-rel=""><img alt="" src="images/doodle2v2.png" class="image" width="290" height="475"></a>
+</div>
+<div class="thumbnail">
+<a href="images/doodle3v2.png" data-rel=""><img alt="" src="images/doodle3v2.png" class="image" width="290" height="475"></a>
+</div>
+<div class="thumbnail">
+<a href="images/doodle4v2.png" data-rel=""><img alt="" src="images/doodle4v2.png" class="image" width="290" height="475"></a>
+</div>
+<div class="thumbnail">
+<a href="images/doodle5v2.png" data-rel=""><img alt="" src="images/doodle5v2.png" class="image" width="290" height="475"></a>
+</div>
+<div class="thumbnail">
+<a href="images/doodle6v2.png" data-rel=""><img alt="" src="images/doodle6v2.png" class="image" width="290" height="475"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<hr id="Line5" style="display:block;width: 100%;z-index:21;">
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+</div>
+</div>
+</div>
+</div>
+<div id="SlideShow2" style="position:absolute;left:300px;top:3121px;width:382px;height:88px;z-index:30;">
+<ul id="SlideShow2-gallery">
+</ul>
+</div>
+</body>
+</html>
